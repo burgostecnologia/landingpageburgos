@@ -1,3 +1,5 @@
+http://burgostecnologia.dx.am
+
 - Usando a extendion Live Server do VSCODE para ver direto o resultado da landingpage
   1 -  bt direito no arquivo .html
   2 -  Open withlive server
