@@ -10,56 +10,54 @@
 body
 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 100vh;
+    flex-direction: column;   
+    height: 100%; 
+    /* justify-content: space-around;    */
     background: #141E30;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.conteudo {
-    /* border-top: 0.4px solid #ffffff; */
-    /* margin-bottom: 48px; */
+
+    
+/* correto */
+.conteudo-principal{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    margin-bottom: 30px;  
 }
 
-.conteudo-principal{
+/* .conteudo-principal-escrito{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 12px; 
-}
+} */
 
-.conteudo-principal-escrito{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
-
-}
-
-.conteudo-principal-escrito-titulo{
+/* .conteudo-principal-escrito-titulo{
     font-family: 'Righteous', cursive;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 34px;
     color: #ffffff;  
-}
+} */
 
 
 .conteudo-principal-escrito-subtitulo{
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     color: #ffffff;
+    padding-left: 50px;
+    padding-right: 50px;
+    
 } 
 
-.conteudo-principal-escrito-botao:hover {
+/* .conteudo-principal-escrito-botao:hover {
     background-color: rgb(12, 121, 168,0.25) ;
-}
+} */
 
-.conteudo-principal-escrito-botao{
+/* .conteudo-principal-escrito-botao{
     background-color: #0c79a8;
     width: 180px;
     height: 60px;
@@ -71,46 +69,47 @@ body
     box-shadow: 4px 5px 4px rgba(0,0,0,0.25);
     border-radius: 20px;
     
-}
+} */
 
 .conteudo-principal-imagem {
-    height: 300px; 
+    height: 150px; 
     padding: 24px
 } 
 
 .conteudo-secundario{
     display: flex;
     flex-direction: row;
-    align-items: top;
-    gap: 24px;
-    margin-top: 48px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;   
+    margin-bottom: 235px; 
 }
 
 .bloco{
-    width:450px;
+    max-width:400px;
+    min-width: 250px; 
+    margin:5px;
 }
+
 
 .conteudo-secundario-titulo{
     border-bottom: 0.4px solid #ffffff;
      padding-bottom: 28px; 
     font-family: 'Righteous', cursive;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
     color: #ffffff;
-    /* margin-bottom: 16px; */
+    text-align: center;
+  
 }
 
 .conteudo-secundario-paragrafo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: nowrap;
     font-family: 'Sarala', sans-serif;
     font-weight: 300;
-    font-size: 18px;
-    color: #ffffff;
+    font-size: 14px;
+    color: #9da3ab;
 }
+
 
 
 .rodape {
@@ -146,8 +145,8 @@ footer
         min-height: 100px;
         padding: 20px 50px;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center;
+        align-items: flex-end; */
         flex-direction: column;
 }
 footer .social_icon,
@@ -155,8 +154,7 @@ footer .menu
 {
         position: relative;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: center;        
         margin: 10px 0;
         flex-wrap: wrap;
 }
@@ -194,17 +192,17 @@ footer p
 {
         color: #fff;
         text-align: center;
-        margin-top: 15px;
-        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-bottom: 0px;
         font-size: 1.1em;
 }
 footer .wave
 {
         position: absolute;
-        top: -100px;
+        top: -70px;
         left: 0;
         width: 100%;
-        height: 100px;
+        height: 80px;
         background: url(../img/wave.png);
         background-size: 1000px 100px;
 }
