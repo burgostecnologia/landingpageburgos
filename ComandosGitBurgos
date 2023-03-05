@@ -1,3 +1,4 @@
+##
 #PASSO 1 - SOMENTE Quando for criar um projeto novo na maquina local
 
 Entrar no explorador de arquivos e acessar a pasta criada do projeto e abrir o git bash nesta pasta
@@ -102,7 +103,7 @@ $ git push origin master
 
 
 #PASSOS COMPLEMENTARES 4 - Clonar projetos e atualizar projetos na maquina com o que esta mais atualizado no repositorio(bitbucket ou github)
-
+ 
 1 - criar uma pasta e clonar
 
 ROBERTO@MAQUINA MINGW64 /c/BURGOS/projeto-copiado (master)
